@@ -24,6 +24,9 @@ spec:
         volumeMounts:
         - name: bitcoin-core-pv-storage
           mountPath: "/home/bitcoin/.bitcoin"
+        args:
+          - "-prune=5500"
+
 ---
 apiVersion: v1
 kind: Service
